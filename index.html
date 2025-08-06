@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Covers by Haytham</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffcce6;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: #d63384;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #800080;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero button {
+      background-color: #ff99cc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    .features li {
+      margin: 0.5rem 0;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery-container img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonials p {
+      font-style: italic;
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+
+    .cta {
+      background-color: #fcd6f8;
+      padding: 3rem 2rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      background-color: #d63384;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ffccf9;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Custom Covers</h1>
+    <nav>
+      <a href="#features">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section 1 -->
+  <section class="hero" style="background-image: url('WhatsApp Image 2025-06-08 at 13.56.07_787dce0a.jpg');">
+    <div class="hero-overlay">
+      <h2>Style Your Phone with Custom Covers</h2>
+      <p>Stand out with personalized designs in beautiful shades</p>
+      <button onclick="scrollToGallery()">Browse Gallery</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section features">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>🎨 Unique custom-made designs</li>
+      <li>🧵 Premium quality materials</li>
+      <li>🚚 Fast and safe delivery</li>
+      <li>❤️ Made with love and creativity</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2>Our Designs</h2>
+    <div class="gallery-container">
+      <img src="IMG-20250606-WA0009.jpg" alt="Design 1" />
+      <img src="IMG-20250606-WA0010.jpg" alt="Design 2" />
+      <img src="IMG-20250606-WA0011.jpg" alt="Design 3" />
+      <img src="IMG-20250606-WA0012.jpg" alt="Design 4" />
+      <img src="WhatsApp Image 2025-06-08 at 13.56.08_5b9f7c8d.jpg" alt="Design 5" />
+      <img src="WhatsApp Image 2025-06-08 at 13.56.09_20221460.jpg" alt="Design 6" />
+      <img src="WhatsApp Image 2025-06-08 at 17.40.31_544ea59f.jpg" alt="Design 7" />
+      <img src="WhatsApp Image 2025-06-08 at 17.40.30_e171f0e0.jpg" alt="Design 8" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonials">
+    <h2>Customer Love</h2>
+    <p>"Absolutely adorable and great quality!" – Aanya</p>
+    <p>"Everyone asks where I got it from!" – Kabir</p>
+    <p>"Affordable, aesthetic, and durable." – Sneha</p>
+  </section>
+
+  <!-- Hero Section 2 (Second Background Image with Text) -->
+  <section class="hero" style="background-image: url('WhatsApp Image 2025-06-08 at 16.34.40_6d3b4546.jpg');">
+    <div class="hero-overlay">
+      <h2>Connect With Us</h2>
+      <p>Follow us on Instagram for daily updates and offers!</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Ready to Design Your Own Cover?</h2>
+    <a href="contact.html"><button>Get Started</button></a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Custom Covers by Sabira. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToGallery() {
+      document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
+

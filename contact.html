@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CustomCovers</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f6;
+      margin: 0;
+      padding: 0;
+      color: #6b21a8;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #db2777;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background-color: white;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #9333ea;
+      margin-bottom: 1rem;
+    }
+
+    .info-box {
+      background-color: #fce7f3;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-box i {
+      font-size: 1.5rem;
+      color: #c026d3;
+      margin-right: 1rem;
+    }
+
+    .info-content {
+      font-size: 1rem;
+      color: #6b21a8;
+    }
+
+    a {
+      color: #7e22ce;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #a78bfa;
+      font-size: 0.875rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>CustomCovers</h1>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <h3>We'd love to hear from you!    Contact any of these platforms to place your order</h3>
+
+    <div class="info-box">
+      <i class="fas fa-envelope"></i>
+      <div class="info-content">Email: <a href="parkarsabira9@gmail.com">parkarsabira9@gmail.com</a></div>
+    </div>
+
+    <div class="info-box">
+      <i class="fas fa-phone"></i>
+      <div class="info-content">Phone: <a href="tel:+918208705543 ">+91 8208705543 </a></div>
+    </div>
+
+    <div class="info-box">
+      <i class="fab fa-instagram"></i>
+      <div class="info-content">Instagram: <a href="https://www.instagram.com/craftstation1/" target="_blank">@craftstation1</a></div>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> CustomCovers. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
